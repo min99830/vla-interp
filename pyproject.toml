@@ -49,10 +49,6 @@ dev = [
 [tool.hatch.metadata]
 allow-direct-references = true
 
-[project.urls]
-Homepage = "https://github.com/NVlabs/vla0"
-Paper = "https://arxiv.org/abs/2503.14734"
-
 [tool.hatch.build.targets.wheel]
 packages = ["src/rv_train", "src/rv_eval"]
 
