@@ -3,6 +3,7 @@
 import random
 from dataclasses import dataclass
 from typing import Any, Dict, List
+
 import torch
 from qwen_vl_utils import process_vision_info
 
@@ -53,7 +54,7 @@ class VLACollator:
                     formatted.append(msg)
 
             text = self.processor.apply_chat_template(
-                formatted, tokenize=False, add_generation_prompt=False, add_vision_id=True
+                formatted, tokenize=False, add_generation_prompt=False, add_vision_id=False
             )
             texts.append(text)
             image_inputs.append(process_vision_info(formatted)[0])

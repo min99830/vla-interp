@@ -115,7 +115,7 @@ class QwenVLActor:
         ]
 
         text = self.processor.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True, add_vision_id=True
+            messages, tokenize=False, add_generation_prompt=True, add_vision_id=False
         )
 
         from qwen_vl_utils import process_vision_info
