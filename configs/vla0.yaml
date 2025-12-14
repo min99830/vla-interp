@@ -42,4 +42,4 @@ save_steps: 10000 # originally 2 epoch
 bf16: true
 dataloader_num_workers: 8
 report_to: ["tensorboard", "wandb"]
-
+seed: 42 # TrainerArguments default value: 42
