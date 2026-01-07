@@ -50,7 +50,7 @@ dev = [
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/rv_train", "src/rv_eval"]
+packages = ["src/rv_train", "src/rv_eval", "src/libero_vqa"]
 
 [tool.ruff]
 line-length = 119
