@@ -14,10 +14,10 @@ from libero.libero.envs import TASK_MAPPING  # noqa
 from tqdm import tqdm
 
 from libero_vqa import oracle_utils
-from libero_vqa.hf_writer import HFWriter
-from libero_vqa.measurement import MeasurementModule
-from libero_vqa.problem_utils import choose_objA_objB
-from libero_vqa.scenario_replayer import ScenarioReplayer
+from libero_vqa.data_collection.hf_writer import HFWriter
+from libero_vqa.data_collection.measurement import MeasurementModule
+from libero_vqa.data_collection.problem_utils import choose_objA_objB
+from libero_vqa.data_collection.scenario_replayer import ScenarioReplayer
 
 
 # -------------------------
